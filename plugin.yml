@@ -1,0 +1,9 @@
+name: MoneyPouch
+main: MoneyPouch\Main
+version: 1.0
+api: [3.0.0-ALPHA8, 3.0.0-ALPHA9]
+author: ShadowLessMCPE
+description: MoneyPouch
+commands:
+ moneypouch:
+  description: "Give a money pouch"
