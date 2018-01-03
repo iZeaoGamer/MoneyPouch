@@ -30,7 +30,7 @@ class Main extends PluginBase implements Listener {
 			
 			if(count($args) < 2) {
 			
-				$sender->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::GOLD . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "Usage: /moneypouch (player) (tier)");
+				$sender->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::GOLD . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "§5Please use: §d/moneypouch (player) (tier)");
 				return true;
 			 
 			}
@@ -48,8 +48,8 @@ class Main extends PluginBase implements Listener {
 							
 							$tier1 = Item::get(Item::ENDER_CHEST, 101, 1);
 							$tier1->setCustomName(TF::RESET . TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " (Tap anywhere)" . PHP_EOL . PHP_EOL . 
-							TF::DARK_GRAY . " *" . TF::AQUA . " Tier Level: " . TF::GRAY . "1" . PHP_EOL .
-							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$10,000 - $25,000");
+							TF::DARK_GRAY . " *" . TF::AQUA . " §aTier Level: " . TF::GRAY . "§21" . PHP_EOL .
+							TF::DARK_GRAY . " *" . TF::AQUA . " §bAmount to win: " . TF::GRAY . "§3$10,000 - $25,000");
 							
 							$player->getInventory()->addItem($tier1);
 							
