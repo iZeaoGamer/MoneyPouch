@@ -1,8 +1,8 @@
 name: MoneyPouch
 main: MoneyPouch\Main
-version: 1.0
-api: [3.0.0-ALPHA8, 3.0.0-ALPHA9]
-author: ShadowLessMCPE
+version: 2.0.0-B1
+api: [3.0.0-ALPHA9, 3.0.0-ALPHA10]
+author: VMPE Development Team
 description: MoneyPouch
 commands:
  moneypouch:
