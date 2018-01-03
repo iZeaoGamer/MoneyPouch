@@ -112,7 +112,7 @@ class Main extends PluginBase implements Listener {
 			
 			else {
 				
-				$sender->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::GOLD . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "Usage: /moneypouch (player) (tier)");
+				$sender->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::GOLD . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "§aYou have recieved your Money Pouch.");
 				
 			}
 		}
