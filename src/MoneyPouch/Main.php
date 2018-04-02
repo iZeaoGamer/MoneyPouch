@@ -140,7 +140,7 @@ class Main extends PluginBase implements Listener {
 				
 				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won:", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier1win);
 				$player->getInventory()->removeItem($tier1);
-				$this->plugin->getServer()->broadcastMessage("§a$player §bhas opened a Money Pouch with Level 1 and has won: §5$§d$tier1win §cMoney in game!");
+				$this->getServer()->broadcastMessage("§a$player §bhas opened a Money Pouch with Level 1 and has won: §5$§d$tier1win §cMoney in game!");
 				
 				break;
 				
@@ -153,7 +153,7 @@ class Main extends PluginBase implements Listener {
 				
 				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won:", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier2win);
 				$player->getInventory()->removeItem($tier2);
-				$this->plugin->getServer()->broadcastMessage("§a$player §bhas opened a Money Pouch with Level 2 and has won: §5$§d$tier2win §cMoney in game!");
+				$this->getServer()->broadcastMessage("§a$player §bhas opened a Money Pouch with Level 2 and has won: §5$§d$tier2win §cMoney in game!");
 				
 				break;
 				
@@ -166,7 +166,7 @@ class Main extends PluginBase implements Listener {
 				
 				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won:", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier3win);
 				$player->getInventory()->removeItem($tier3);
-				$this->plugin->getServer()->broadcastMessage("§a$player §bhas opened a Money Pouch with Level 1 and has won: §5$§d$tier3win §cMoney in game!");
+				$this->getServer()->broadcastMessage("§a$player §bhas opened a Money Pouch with Level 1 and has won: §5$§d$tier3win §cMoney in game!");
 				
 				break;
 				
@@ -179,7 +179,7 @@ class Main extends PluginBase implements Listener {
 				
 				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won:", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier4win);
 				$player->getInventory()->removeItem($tier4);
-				$this->plugin->getServer()->broadcastMessage("§a$player §bhas opened a Money Pouch with Level 1 and has won: §5$§d$tier4win §cMoney in game!");
+				$this->getServer()->broadcastMessage("§a$player §bhas opened a Money Pouch with Level 1 and has won: §5$§d$tier4win §cMoney in game!");
 				
 				break;
 				
@@ -192,7 +192,7 @@ class Main extends PluginBase implements Listener {
 				
 				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won:", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier5win);
 				$player->getInventory()->removeItem($tier5);
-				$this->plugin->getServer()->broadcastMessage("§a$player §bhas opened a Money Pouch with Level 1 and has won: §5$§d$tier5win §cMoney in game!");
+				$this->getServer()->broadcastMessage("§a$player §bhas opened a Money Pouch with Level 1 and has won: §5$§d$tier5win §cMoney in game!");
 				
 				break;
 				
