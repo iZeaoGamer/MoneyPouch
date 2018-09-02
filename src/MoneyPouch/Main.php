@@ -52,8 +52,8 @@ public $plugin;
 							$tier1 = Item::get(Item::ENDER_CHEST, 101, 1);
 							$tier1->setLore(["Right-Click to see how much money you can get!"]);
 							$tier1->setCustomName(TF::RESET . TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " (Tap anywhere)" . PHP_EOL . PHP_EOL . 
-							TF::DARK_GRAY . " *" . TF::AQUA . " §aTier Level: " . TF::GRAY . "§21" . PHP_EOL .
-							TF::DARK_GRAY . " *" . TF::AQUA . " §bAmount to win: " . TF::GRAY . "§3$10,000 - $25,000");
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dTier Level: " . TF::GRAY . "§51" . PHP_EOL .
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dAmount to win: " . TF::GRAY . "§5$10,000 - $25,000");
 							
 							$player->getInventory()->addItem($tier1);
 							
@@ -62,10 +62,10 @@ public $plugin;
 							case 2:
 							
 							$tier2 = Item::get(Item::ENDER_CHEST, 102, 1);
-							$tier2->setLore("Right-Click to see how much money you can get!");
-							$tier2->setCustomName(TF::RESET . TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " (Tap anywhere)" . PHP_EOL . PHP_EOL . 
-							TF::DARK_GRAY . " *" . TF::AQUA . " Tier Level: " . TF::GRAY . "2" . PHP_EOL .
-							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$25,000 - $50,000");
+							$tier2->setLore(["Right-Click to see how much money you can get!"]);
+							$tier2->setCustomName(TF::RESET . TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " §a(Tap anywhere)" . PHP_EOL . PHP_EOL . 
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dTier Level: " . TF::GRAY . "§52" . PHP_EOL .
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dAmount to win: " . TF::GRAY . "§5$25,000 - $50,000");
 							
 							$player->getInventory()->addItem($tier2);
 							
@@ -74,10 +74,10 @@ public $plugin;
 							case 3:
 							
 							$tier3 = Item::get(Item::ENDER_CHEST, 103, 1);
-							$tier3->setLore("Right-Click to see how much money you can get!");
-							$tier3->setCustomName(TF::RESET . TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " (Tap anywhere)" . PHP_EOL . PHP_EOL . 
-							TF::DARK_GRAY . " *" . TF::AQUA . " Tier Level: " . TF::GRAY . "3" . PHP_EOL .
-							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$50,000 - $100,000");
+							$tier3->setLore(["Right-Click to see how much money you can get!"]);
+							$tier3->setCustomName(TF::RESET . TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " §a(Tap anywhere)" . PHP_EOL . PHP_EOL . 
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dTier Level: " . TF::GRAY . "§53" . PHP_EOL .
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dAmount to win: " . TF::GRAY . "§5$50,000 - $100,000");
 							
 							$player->getInventory()->addItem($tier3);
 							
@@ -86,10 +86,10 @@ public $plugin;
 							case 4:
 							
 							$tier4 = Item::get(Item::ENDER_CHEST, 104, 1);
-							$tier4->setLore("Right-Click to see how much money you can get!");
-							$tier4->setCustomName(TF::RESET . TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " (Tap anywhere)" . PHP_EOL . PHP_EOL . 
-							TF::DARK_GRAY . " *" . TF::AQUA . " Tier Level: " . TF::GRAY . "4" . PHP_EOL .
-							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$100,000 - $500,000");
+							$tier4->setLore(["Right-Click to see how much money you can get!"]);
+							$tier4->setCustomName(TF::RESET . TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " §a(Tap anywhere)" . PHP_EOL . PHP_EOL . 
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dTier Level: " . TF::GRAY . "§54" . PHP_EOL .
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dAmount to win: " . TF::GRAY . "§5$100,000 - $500,000");
 							
 							$player->getInventory()->addItem($tier4);
 							
@@ -98,12 +98,24 @@ public $plugin;
 							case 5:
 							
 							$tier5 = Item::get(Item::ENDER_CHEST, 105, 1);
-							$tier5->setLore("Right-Click to see how much money you can get!");
-							$tier5->setCustomName(TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " (Tap anywhere)" . PHP_EOL . PHP_EOL . 
-							TF::DARK_GRAY . " *" . TF::AQUA . " Tier Level: " . TF::GRAY . "5" . PHP_EOL .
-							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$500,000 - $1,000,000");
+							$tier5->setLore(["Right-Click to see how much money you can get!"]);
+							$tier5->setCustomName(TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " §a(Tap anywhere)" . PHP_EOL . PHP_EOL . 
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dTier Level: " . TF::GRAY . "§55" . PHP_EOL .
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dAmount to win: " . TF::GRAY . "§5$500,000 - $1,000,000");
 							
 							$player->getInventory()->addItem($tier5);
+							
+							break;
+							
+							case 6:
+							
+							$tier6 = Item::get(Item::ENDER_CHEST, 106, 1);
+							$tier6->setLore(["Right-Click to see how much money you can get!"]);
+							$tier6->setCustomName(TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " §a(Tap anywhere)" . PHP_EOL . PHP_EOL . 
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dTier Level: " . TF::GRAY . "§56" . PHP_EOL .
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dAmount to win: " . TF::GRAY . "§5$1,000,000 - $5,000,000");
+							
+							$player->getInventory()->addItem($tier6);
 							
 							break;
 							
@@ -114,13 +126,13 @@ public $plugin;
 			
 			if(!$sender->hasPermission("moneypouch.command.give")) {
 				
-				$sender->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::RED . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You don't have permission to use this command.");
+				$sender->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::RED . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "§cYou don't have permission to use this command.");
 				
 			}
 			
 			else {
 				
-				$sender->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::GOLD . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "§aYou have recieved your Money Pouch.");
+				$sender->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::GOLD . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "§dYou have recieved your Money Pouch.");
 				
 			}
 		}
@@ -146,10 +158,10 @@ public $plugin;
 				
 				EconomyAPI::getInstance()->addMoney($player, $tier1win);
 				
-				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won:", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier1win);
+				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won: ", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier1win);
 				$player->getInventory()->removeItem($tier1);
 				$player = $player->getName();
-				$this->getServer()->broadcastMessage(TF::BOLD . "§a$player" . "§bhas opened a Money Pouch with Level 1 and has won:" . "§5$$tier1win" . "§cMoney in game!");
+				$this->getServer()->broadcastMessage(TF::BOLD . "§a$player " . "§bhas opened a Money Pouch with Level 1 and has won: " . "§5$$tier1win" . " §cMoney in game!");
 				
 				break;
 				
@@ -160,10 +172,10 @@ public $plugin;
 				
 				EconomyAPI::getInstance()->addMoney($player, $tier2win);
 				
-				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won:", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier2win);
+				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won: ", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier2win);
 				$player->getInventory()->removeItem($tier2);
 				$player = $player->getName();
-				$this->getServer()->broadcastMessage(TF::BOLD . "§a$player" . "§bhas opened a Money Pouch with Level 2 and has won:" . "§5$$tier2win" . "§cMoney in game!");
+				$this->getServer()->broadcastMessage(TF::BOLD . "§a$player " . "§bhas opened a Money Pouch with Level 2 and has won: " . "§5$$tier2win" . " §cMoney in game!");
 				
 				break;
 				
@@ -174,10 +186,10 @@ public $plugin;
 				
 				EconomyAPI::getInstance()->addMoney($player, $tier3win);
 				
-				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won:", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier3win);
+				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won: ", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier3win);
 				$player->getInventory()->removeItem($tier3);
 				$player = $player->getName();
-				$this->getServer()->broadcastMessage(TF::BOLD . "§a$player" . "§bhas opened a Money Pouch with Level 3 and has won:" . "§5$$tier3win" . "§cMoney in game!");
+				$this->getServer()->broadcastMessage(TF::BOLD . "§a$player " . " §bhas opened a Money Pouch with Level 3 and has won: " . "§5$$tier3win" . " §cMoney in game!");
 				
 				break;
 				
@@ -188,10 +200,10 @@ public $plugin;
 				
 				EconomyAPI::getInstance()->addMoney($player, $tier4win);
 				
-				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won:", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier4win);
+				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won: ", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier4win);
 				$player->getInventory()->removeItem($tier4);
 				$player = $player->getName();
-				$this->getServer()->broadcastMessage(TF::BOLD . "§a$player" . "§bhas opened a Money Pouch with Level 1 and has won:" . "§5$$tier4win" . "§cMoney in game!");
+				$this->getServer()->broadcastMessage(TF::BOLD . "§a$player " . " §bhas opened a Money Pouch with Level 4 and has won: " . "§5$$tier4win" . " §cMoney in game!");
 				
 				break;
 				
@@ -202,14 +214,27 @@ public $plugin;
 				
 				EconomyAPI::getInstance()->addMoney($player, $tier5win);
 				
-				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won:", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier5win);
+				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won: ", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier5win);
 				$player->getInventory()->removeItem($tier5);
 				$player = $player->getName();
-				$this->getServer()->broadcastMessage(TF::BOLD . "§a$player" . "§bhas opened a Money Pouch with Level 5 and has won:" . "§5$$tier5win" . "§cMoney in game!");
+				$this->getServer()->broadcastMessage(TF::BOLD . "§a$player " . "§bhas opened a Money Pouch with Level 5 and has won: " . "§5$$tier5win" . " §cMoney in game!");
 				
 				break;
 				
-			}
+				case 106:
+				
+				$tier6 = Item::get(Item::ENDER_CHEST, 106, 1);
+				$tier6win = rand(1000000, 5000000);
+				
+				EconomyAPI::getInstance()->addMoney($player, $tier6win);
+				
+				$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won: ", TF::BOLD . TF::LIGHT_PURPLE . "$" . $tier6win);
+				$player->getInventory()->removeItem($tier6);
+				$player = $player->getName();
+				$this->getServer()->broadcastMessage(TF::BOLD . "§a$player " . "§bhas opened a Money Pouch with Level 5 and has won: " . "§5$$tier6win" . " §cMoney in game!");
+				
+				break;
+				}
 		}
 	}
 	public function onPlace(BlockPlaceEvent $event) {
@@ -218,7 +243,7 @@ public $plugin;
 			
 			$damage = $event->getItem()->getDamage();
 			
-			if($damage === 101 || $damage === 102 || $damage === 103 || $damage === 104 || $damage === 105) {
+			if($damage === 101 || $damage === 102 || $damage === 103 || $damage === 104 || $damage === 105 || $damage === 106) {
 				
 				$event->setCancelled();
 				

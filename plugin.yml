@@ -1,7 +1,7 @@
 name: MoneyPouch
 main: MoneyPouch\Main
-version: 3.0.0
-api: [3.0.0, 4.0.0]
+version: 3.0.1
+api: [3.0.0-ALPHA11, 3.0.0-ALPHA12, 3.0.0, 4.0.0]
 author: VMPE Development Team
 description: MoneyPouch
 commands:

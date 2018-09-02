@@ -48,7 +48,7 @@ class AntiDupe implements Listener{
 				case "Trapped Chest":
 				case "Wooden Trapdoor":
 				case "Bed":
-					$p->sendMessage(TextFormat::RED.TextFormat::BOLD."Error: ".TextFormat::RESET.TextFormat::GRAY."you are not allowed to place this item in an item frame.");
+					$p->sendMessage("§2§lError: §r§cYou are not allowed to place this item in the Item frames.");
 					$event->setCancelled(true);
 					break;
 			}
