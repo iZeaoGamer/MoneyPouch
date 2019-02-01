@@ -1,5 +1,4 @@
 <?php
-
 namespace MoneyPouch;
 
 use pocketmine\command\Command;
@@ -13,7 +12,7 @@ use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat as TF;
 use onebone\economyapi\EconomyAPI;
-use JackMD\MysteryCrate\Main;
+use JackMD\MysteryCrate\Main as MysteryCrate;
 
 class Main extends PluginBase implements Listener {
 	
@@ -246,7 +245,7 @@ public $plugin;
 					$mystery = $this->getServer()->getPluginManager()->getPlugin("MysteryCrate");
 					$tier7 = Item::get(Item::ENDER_CHEST, 107, 1);
 					$tier7win = rand(1, 15);
-					if($mystery instanceof Main){
+					if($mystery instanceof MysteryCrate){
 					$mystery->giveKey($player, "rare", $tier7win); 
 						$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won: ", TF::BOLD . TF::LIGHT_PURPLE . $tier7win . " rare keys");
 				$player->getInventory()->removeItem($tier7);
