@@ -12,11 +12,11 @@ use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat as TF;
-
 use onebone\economyapi\EconomyAPI;
+use JackMD\MysteryCrate\Main;
 
 class Main extends PluginBase implements Listener {
-
+	
 public $plugin;
 	
 	public function onEnable() {
@@ -162,7 +162,7 @@ public $plugin;
 				case 101:
 				
 				$tier1 = Item::get(Item::ENDER_CHEST, 101, 1);
-				$tier1win = rand(10000, 25000);
+				$tier1win = rand(10, 1000);
 				
 				EconomyAPI::getInstance()->addMoney($player, $tier1win);
 				
@@ -176,7 +176,7 @@ public $plugin;
 				case 102:
 				
 				$tier2 = Item::get(Item::ENDER_CHEST, 102, 1);
-				$tier2win = rand(25000, 50000);
+				$tier2win = rand(1000, 10000);
 				
 				EconomyAPI::getInstance()->addMoney($player, $tier2win);
 				
@@ -190,7 +190,7 @@ public $plugin;
 				case 103:
 				
 				$tier3 = Item::get(Item::ENDER_CHEST, 103, 1);
-				$tier3win = rand(50000, 100000);
+				$tier3win = rand(10000, 100000);
 				
 				EconomyAPI::getInstance()->addMoney($player, $tier3win);
 				
@@ -251,11 +251,12 @@ public $plugin;
 						$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won: ", TF::BOLD . TF::LIGHT_PURPLE . $tier7win . " rare keys");
 				$player->getInventory()->removeItem($tier7);
 				$player = $player->getName();
-						$this->getServer()->broadcastMessage(TF::DARK_PURPLE . $player . TF::GREEN . " has opened MoneyPouch tier level 7, and has received " . TF::DARK_PURPLE . $tier7win . " Rare keys!");
+						$this->getServer()->broadcastMessage(TF::DARK_PURPLE . $player->getName() . TF::GREEN . " has opened MoneyPouch tier level 7, and has received " . TF::DARK_PURPLE . $tier7win . " Rare keys!");
 						break;
 						
 				}
 		}
+	}
 	}
 	public function onPlace(BlockPlaceEvent $event) {
 		
