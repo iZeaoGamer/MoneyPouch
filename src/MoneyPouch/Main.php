@@ -11,7 +11,6 @@ use pocketmine\item\Item;
 use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
-use pocketmine\scheduler\PluginTask;
 use pocketmine\utils\TextFormat as TF;
 
 use onebone\economyapi\EconomyAPI;
@@ -118,7 +117,16 @@ public $plugin;
 							$player->getInventory()->addItem($tier6);
 							
 							break;
+							case 7:
+							$tier7 = Item::get(Item::ENDER_CHEST, 107, 1);
+							$tier7->setLore(["Right-Click to see how much money you can get!"]);
+							$tier7->setCustomName(TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " §a(Tap anywhere)" . PHP_EOL . PHP_EOL . 
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dTier Level: " . TF::GRAY . "§57" . PHP_EOL .
+							TF::DARK_GRAY . " *" . TF::AQUA . " §dAmount to win: " . TF::GRAY . "§51-15 rare keys!");
 							
+							$player->getInventory()->addItem($tier7);
+							
+							break;
 						}
 					}
 				}
@@ -234,6 +242,18 @@ public $plugin;
 				$this->getServer()->broadcastMessage(TF::BOLD . "§a$player " . "§bhas opened a Money Pouch with Level 5 and has won: " . "§5$$tier6win" . " §cMoney in game!");
 				
 				break;
+				case 107:
+					$mystery = $this->getServer()->getPluginManager()->getPlugin("MysteryCrate");
+					$tier7 = Item::get(Item::ENDER_CHEST, 107, 1);
+					$tier7win = rand(1, 15);
+					if($mystery instanceof Main){
+					$mystery->giveKey($player, "rare", $tier7win); 
+						$player->addTitle(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have won: ", TF::BOLD . TF::LIGHT_PURPLE . $tier7win . " rare keys");
+				$player->getInventory()->removeItem($tier7);
+				$player = $player->getName();
+						$this->getServer()->broadcastMessage(TF::DARK_PURPLE . $player . TF::GREEN . " has opened MoneyPouch tier level 7, and has received " . TF::DARK_PURPLE . $tier7win . " Rare keys!");
+						break;
+						
 				}
 		}
 	}
@@ -243,7 +263,7 @@ public $plugin;
 			
 			$damage = $event->getItem()->getDamage();
 			
-			if($damage === 101 || $damage === 102 || $damage === 103 || $damage === 104 || $damage === 105 || $damage === 106) {
+			if($damage === 101 || $damage === 102 || $damage === 103 || $damage === 104 || $damage === 105 || $damage === 106 || $damage === 107) {
 				
 				$event->setCancelled();
 				
